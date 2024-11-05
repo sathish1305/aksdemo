@@ -11,9 +11,9 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '863a36f4-a00f-4aa7-aef9-b9a2777acdfb'
-  imageRepository: 'samplewebapp'
-  containerRegistry: 'devopsmelacr.azurecr.io'
+  dockerRegistryServiceConnection: 'acr-connection'
+  imageRepository: 'akscontainerdemo'
+  containerRegistry: 'akscontainerdemo.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'devopsmelacr132827a7-auth'
